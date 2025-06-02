@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hemanth Kumar - Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav h1 {
+      font-size: 24px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav ul li a:hover {
+      color: #ffc107;
+    }
+    .hero {
+      padding: 80px 20px;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .hero span {
+      color: #ffdf00;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 28px;
+      color: #343a40;
+      margin-bottom: 20px;
+      border-left: 5px solid #2575fc;
+      padding-left: 10px;
+    }
+    #about p, #skills ul, #projects p {
+      margin-bottom: 15px;
+      font-size: 16px;
+    }
+    #skills ul {
+      list-style: disc inside;
+    }
+    .project-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .project {
+      background-color: #fff;
+      padding: 20px;
+      flex: 1 1 250px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .project h3 {
+      margin-bottom: 10px;
+      color: #2575fc;
+    }
+    .project a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #2575fc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+    .download-btn:hover {
+      background-color: #1a4fb1;
+    }
+    #contact a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    #contact a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      .hero h2 {
+        font-size: 28px;
+      }
+      .project-list {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Hemanth Kumar</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Hello, I'm <span>Hemanth Kumar</span></h2>
+    <p>Web Developer | Frontend Developer | Python & Cloud Enthusiast</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Hemanth Kumar</strong>, a passionate <strong>Web Developer</strong> and <strong>Frontend Developer</strong> with a strong foundation in designing clean, responsive, and user-centric web interfaces. I also bring additional knowledge in <strong>Python</strong>, <strong>AI/ML</strong>, and <strong>Cloud Computing</strong>, which enhances my ability to build intelligent and scalable web applications.</p>
+    <p>I'm particularly interested in creating interactive websites that deliver exceptional user experiences. With a combination of technical expertise and creativity, I strive to turn ideas into elegant, functional web solutions. I'm continuously learning and excited to contribute to meaningful projects that make an impact.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills & Tools</h2>
+    <ul>
+      <li><strong>Languages & Tech:</strong> HTML, CSS, JavaScript, Python, Cloud Computing</li>
+      <li><strong>Tools & Platforms:</strong> Git, VS Code, Jupyter Notebook, AWS</li>
+      <li><strong>Soft Skills:</strong> Communication, Problem-Solving, Teamwork</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Personalized Learning Path</h3>
+        <p>A smart tool to recommend learning resources based on user preferences and goals.</p>
+      </div>
+      <div class="project">
+        <h3>Plagiarism Detection System</h3>
+        <p>A machine-learning-based plagiarism detection system using NLP techniques like text preprocessing, TF-IDF vectorization, and cosine similarity. It compares two documents and flags them if similarity exceeds a set threshold.</p>
+        <a class="download-btn" href="plagiarism_project.pdf" download>📄 Download PDF</a>
+      </div>
+      <div class="project">
+        <h3>JNTUA Marks Calculator</h3>
+        <p>Live tool to calculate SGPA for JNTUA students.<br>
+        🔗 <a href="https://hemanthkumar-38.github.io/sgpa-calculator/" target="_blank">View Project</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:hemanthkumar.tellakula@gmail.com">hemanthkumar.tellakula@gmail.com</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/HemanthKumar-38" target="_blank">github.com/HemanthKumar-38</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/hemanth-kumar-6773a5290" target="_blank">linkedin.com/in/hemanth-kumar</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hemanth Kumar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
