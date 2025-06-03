@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Hemanth Kumar - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     * {
       margin: 0;
@@ -121,9 +122,25 @@
       background-color: #343a40;
       color: white;
       text-align: center;
-      padding: 15px 0;
+      padding: 20px 10px;
       margin-top: 20px;
       font-size: 14px;
+    }
+    footer .social-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    footer .social-icons a {
+      color: white;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+    footer .social-icons a:hover {
+      color: #ffc107;
     }
     @media (max-width: 768px) {
       nav ul {
@@ -163,6 +180,7 @@
     <h2>About Me</h2>
     <p>Hello! I'm <strong>Hemanth Kumar</strong>, a passionate <strong>Web Developer</strong> and <strong>Frontend Developer</strong> with a strong foundation in designing clean, responsive, and user-centric web interfaces. I also bring additional knowledge in <strong>Python</strong>, <strong>AI/ML</strong>, and <strong>Cloud Computing</strong>, which enhances my ability to build intelligent and scalable web applications.</p>
     <p>I'm particularly interested in creating interactive websites that deliver exceptional user experiences. With a combination of technical expertise and creativity, I strive to turn ideas into elegant, functional web solutions. I'm continuously learning and excited to contribute to meaningful projects that make an impact.</p>
+    <a class="download-btn" href="hemu3138.pdf" target="_blank">📄 View or Download Resume</a>
   </section>
 
   <section id="skills">
@@ -183,7 +201,7 @@
       </div>
       <div class="project">
         <h3>Plagiarism Detection System</h3>
-        <p>A machine-learning-based plagiarism detection system using NLP techniques like text preprocessing, TF-IDF vectorization, and cosine similarity. It compares two documents and flags them if similarity exceeds a set threshold.</p>
+        <p>A machine-learning-based plagiarism detection system using NLP techniques like text preprocessing, TF-IDF vectorization, and cosine similarity.</p>
         <a class="download-btn" href="plagiarism_project.pdf" download>📄 Download PDF</a>
       </div>
       <div class="project">
@@ -202,6 +220,11 @@
   </section>
 
   <footer>
+    <div class="social-icons">
+      <a href="mailto:hemanthkumar.tellakula@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/HemanthKumar-38" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/hemanth-kumar-6773a5290" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
     <p>&copy; 2025 Hemanth Kumar. All rights reserved.</p>
   </footer>
 </body>
